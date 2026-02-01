@@ -67,4 +67,14 @@ button {
   from { transform: scale(0); }
   to { transform: scale(1); }
 }
-S
+button.hug {
+  background-color: #ff99cc;
+  color: white;
+  margin-top: 10px;
+}
+button.hug {
+  background-color: #ff99cc;
+  color: white;
+  margin-top: 10px;
+}
+
