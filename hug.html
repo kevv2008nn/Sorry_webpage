@@ -9,71 +9,54 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #fcd5ce, #ffafcc); /* softer, lighter gradient */
+  background: linear-gradient(to bottom right, #fcd5ce, #ffafcc);
   font-family: 'Arial', sans-serif;
 }
 
 .romantic-word {
   font-family: 'Cursive', 'Segoe Script', sans-serif;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
-  background: linear-gradient(45deg, #ff0044, #ff3366, #ff6699); /* darker, vibrant pink/red for contrast */
+  background: linear-gradient(45deg, #ff0044, #ff3366, #ff6699);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* darker shadow to pop more */
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
   letter-spacing: 3px;
   transition: transform 0.3s, text-shadow 0.3s;
+  margin-bottom: 40px;
 }
 
-.album {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.2);
+.romantic-word:hover {
+  transform: scale(1.2) rotate(-2deg);
+  text-shadow: 4px 4px 14px rgba(255, 105, 180, 0.8);
+  cursor: pointer;
+}
+
+.hug-box {
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   backdrop-filter: blur(5px);
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0044;
   animation: fadeIn 2s ease-in-out;
-}
-
-.album img {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 5px solid white;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.album img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-
-.romantic-word:hover {
-  transform: scale(1.2) rotate(-2deg);
-  text-shadow: 4px 4px 12px rgba(255, 105, 180, 0.8);
-  cursor: pointer;
-}
-
-
 </style>
 </head>
-<body><center>
-<h1 class="romantic-word">Amour"</h1><center>
+<body>
 
-<div class="album">
-  <img src="C:\Users\kevvn\Pictures\photo2.jpg.jpeg" alt="Photo 1">
-  <img src="C:\Users\kevvn\Pictures\WhatsApp Image 2026-01-19 at 16.19.41.jpeg" alt="Photo 2">
-</div>
+<h1 class="romantic-word">Amour</h1>
+<div class="hug-box">Hug Received 🤗</div>
 
 </body>
 </html>
